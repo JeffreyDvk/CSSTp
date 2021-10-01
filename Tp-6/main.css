@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Josefin";
+    src: url("font/Josefin.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin";
+}
+body{
+    font-weight: 400;
+}
+.text{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.2em;
+    color : white;
+    background-color: black;
+}
+.text span{
+    animation: loader 6s linear infinite;
+    animation-delay: calc(0.4s * var(--i));
+}
+ @keyframes loader {
+    0%{
+        transform: translateY(0%);
+    }
+    10%{
+        transform: translateY(-200%);
+    }
+    20%{
+        transform: translateY(0%);
+    }
+ }
